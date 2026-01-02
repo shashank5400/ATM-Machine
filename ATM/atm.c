@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* Function declarations */
 void menu();
 void checkBalance(int balance);
 int deposit(int balance);
@@ -9,9 +8,9 @@ int changePin(int oldPin);
 
 int main()
 {
-    int pin = 1234;          // Default PIN
+    int pin = 1234;          
     int enteredPin;
-    int balance = 5000;      // Initial balance
+    int balance = 5000;      
     int choice;
     int attempts = 0;
 
@@ -43,7 +42,7 @@ int main()
         return 0;
     }
 
-    /* ATM Menu */
+    
     do
     {
         menu();
@@ -81,7 +80,7 @@ int main()
     return 0;
 }
 
-/* Displays menu */
+
 void menu()
 {
     printf("\n------------ ATM MENU ------------\n");
@@ -93,13 +92,13 @@ void menu()
     printf("----------------------------------\n");
 }
 
-/* Check balance */
+
 void checkBalance(int balance)
 {
     printf("\nYour current balance is: Rs. %d\n", balance);
 }
 
-/* Deposit money */
+
 int deposit(int balance)
 {
     int amount;
@@ -120,7 +119,7 @@ int deposit(int balance)
     return balance;
 }
 
-/* Withdraw money */
+
 int withdraw(int balance)
 {
     int amount;
@@ -145,7 +144,7 @@ int withdraw(int balance)
     return balance;
 }
 
-/* Change PIN */
+
 int changePin(int oldPin)
 {
     int newPin, confirmPin;
@@ -167,3 +166,4 @@ int changePin(int oldPin)
         return oldPin;
     }
 }
+
